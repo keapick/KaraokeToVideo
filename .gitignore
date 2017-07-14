@@ -61,3 +61,13 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# ignore media files
+*.mp3
+*.mp4
+*.cdg
+*.MP3
+*.MP4
+*.CDG
+*.zip
+*.ZIP

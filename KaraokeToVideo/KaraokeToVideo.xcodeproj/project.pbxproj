@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F480BE21EE7332800D3E7C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE11EE7332800D3E7C9 /* main.m */; };
+		5F480BEA1EE7339200D3E7C9 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE91EE7339200D3E7C9 /* CDGToMp4.m */; };
+		5FA8D7501F00C62F0023BB97 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8D74F1F00C62F0023BB97 /* CDGraphicsReader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F480BDC1EE7332800D3E7C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KaraokeToVideo; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F480BE11EE7332800D3E7C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F480BE81EE7339200D3E7C9 /* CDGToMp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGToMp4.h; sourceTree = "<group>"; };
+		5F480BE91EE7339200D3E7C9 /* CDGToMp4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGToMp4.m; sourceTree = "<group>"; };
+		5FA8D74E1F00C62F0023BB97 /* CDGraphicsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphicsReader.h; sourceTree = "<group>"; };
+		5FA8D74F1F00C62F0023BB97 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F480BDB1EE7332800D3E7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F480BD51EE7332800D3E7C9 = {
+			isa = PBXGroup;
+			children = (
+				5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */,
+				5FDAE9641EF7324A00F29C16 /* Resources */,
+				5F480BDF1EE7332800D3E7C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F480BDF1EE7332800D3E7C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */ = {
+			isa = PBXGroup;
+			children = (
+				5F480BE11EE7332800D3E7C9 /* main.m */,
+				5F480BE81EE7339200D3E7C9 /* CDGToMp4.h */,
+				5F480BE91EE7339200D3E7C9 /* CDGToMp4.m */,
+				5FA8D74E1F00C62F0023BB97 /* CDGraphicsReader.h */,
+				5FA8D74F1F00C62F0023BB97 /* CDGraphicsReader.m */,
+			);
+			path = KaraokeToVideo;
+			sourceTree = "<group>";
+		};
+		5FDAE9641EF7324A00F29C16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F480BE51EE7332800D3E7C9 /* Build configuration list for PBXNativeTarget "KaraokeToVideo" */;
+			buildPhases = (
+				5F480BDA1EE7332800D3E7C9 /* Sources */,
+				5F480BDB1EE7332800D3E7C9 /* Frameworks */,
+				5F480BDC1EE7332800D3E7C9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaraokeToVideo;
+			productName = KaraokeToVideo;
+			productReference = 5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F480BD61EE7332800D3E7C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = echo;
+				TargetAttributes = {
+					5F480BDD1EE7332800D3E7C9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8ZKUDT7A65;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F480BD91EE7332800D3E7C9 /* Build configuration list for PBXProject "KaraokeToVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F480BD51EE7332800D3E7C9;
+			productRefGroup = 5F480BDF1EE7332800D3E7C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F480BDA1EE7332800D3E7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F480BE21EE7332800D3E7C9 /* main.m in Sources */,
+				5F480BEA1EE7339200D3E7C9 /* CDGToMp4.m in Sources */,
+				5FA8D7501F00C62F0023BB97 /* CDGraphicsReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F480BE31EE7332800D3E7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F480BE41EE7332800D3E7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F480BE61EE7332800D3E7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F480BE71EE7332800D3E7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F480BD91EE7332800D3E7C9 /* Build configuration list for PBXProject "KaraokeToVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F480BE31EE7332800D3E7C9 /* Debug */,
+				5F480BE41EE7332800D3E7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F480BE51EE7332800D3E7C9 /* Build configuration list for PBXNativeTarget "KaraokeToVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F480BE61EE7332800D3E7C9 /* Debug */,
+				5F480BE71EE7332800D3E7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F480BD61EE7332800D3E7C9 /* Project object */;
+}
