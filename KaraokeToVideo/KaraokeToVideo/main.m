@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CDGToMp4.h"
+#import "KaraokeLib.h"
 
 // practice working with a binary file format, if you actually want to convert mp3+cdg to mp4 use ffmpeg!
 int main(int argc, const char * argv[]) {

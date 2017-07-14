@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0800E41F19233D00E104C3 /* KaraokeLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800E31F19233D00E104C3 /* KaraokeLib.h */; };
+		5F0800E61F19233D00E104C3 /* KaraokeLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800E51F19233D00E104C3 /* KaraokeLib.m */; };
+		5F0800F01F19237200E104C3 /* CDGraphicsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800EC1F19237200E104C3 /* CDGraphicsReader.h */; };
+		5F0800F11F19237200E104C3 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800ED1F19237200E104C3 /* CDGraphicsReader.m */; };
+		5F0800F21F19237200E104C3 /* CDGToMp4.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800EE1F19237200E104C3 /* CDGToMp4.h */; };
+		5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800EF1F19237200E104C3 /* CDGToMp4.m */; };
+		5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */; };
 		5F480BE21EE7332800D3E7C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE11EE7332800D3E7C9 /* main.m */; };
-		5F480BEA1EE7339200D3E7C9 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE91EE7339200D3E7C9 /* CDGToMp4.m */; };
-		5FA8D7501F00C62F0023BB97 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8D74F1F00C62F0023BB97 /* CDGraphicsReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,30 +30,55 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libKaraokeLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0800E31F19233D00E104C3 /* KaraokeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaraokeLib.h; sourceTree = "<group>"; };
+		5F0800E51F19233D00E104C3 /* KaraokeLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaraokeLib.m; sourceTree = "<group>"; };
+		5F0800EC1F19237200E104C3 /* CDGraphicsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphicsReader.h; sourceTree = "<group>"; };
+		5F0800ED1F19237200E104C3 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
+		5F0800EE1F19237200E104C3 /* CDGToMp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGToMp4.h; sourceTree = "<group>"; };
+		5F0800EF1F19237200E104C3 /* CDGToMp4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGToMp4.m; sourceTree = "<group>"; };
 		5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KaraokeToVideo; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F480BE11EE7332800D3E7C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F480BE81EE7339200D3E7C9 /* CDGToMp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGToMp4.h; sourceTree = "<group>"; };
-		5F480BE91EE7339200D3E7C9 /* CDGToMp4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGToMp4.m; sourceTree = "<group>"; };
-		5FA8D74E1F00C62F0023BB97 /* CDGraphicsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphicsReader.h; sourceTree = "<group>"; };
-		5FA8D74F1F00C62F0023BB97 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F480BDB1EE7332800D3E7C9 /* Frameworks */ = {
+		5F0800DE1F19233D00E104C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F480BDB1EE7332800D3E7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0800E21F19233D00E104C3 /* KaraokeLib */ = {
+			isa = PBXGroup;
+			children = (
+				5F0800E31F19233D00E104C3 /* KaraokeLib.h */,
+				5F0800E51F19233D00E104C3 /* KaraokeLib.m */,
+				5F0800EE1F19237200E104C3 /* CDGToMp4.h */,
+				5F0800EF1F19237200E104C3 /* CDGToMp4.m */,
+				5F0800EC1F19237200E104C3 /* CDGraphicsReader.h */,
+				5F0800ED1F19237200E104C3 /* CDGraphicsReader.m */,
+			);
+			path = KaraokeLib;
+			sourceTree = "<group>";
+		};
 		5F480BD51EE7332800D3E7C9 = {
 			isa = PBXGroup;
 			children = (
 				5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */,
 				5FDAE9641EF7324A00F29C16 /* Resources */,
+				5F0800E21F19233D00E104C3 /* KaraokeLib */,
 				5F480BDF1EE7332800D3E7C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */,
+				5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				5F480BE11EE7332800D3E7C9 /* main.m */,
-				5F480BE81EE7339200D3E7C9 /* CDGToMp4.h */,
-				5F480BE91EE7339200D3E7C9 /* CDGToMp4.m */,
-				5FA8D74E1F00C62F0023BB97 /* CDGraphicsReader.h */,
-				5FA8D74F1F00C62F0023BB97 /* CDGraphicsReader.m */,
 			);
 			path = KaraokeToVideo;
 			sourceTree = "<group>";
@@ -82,7 +109,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5F0800DF1F19233D00E104C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0800E41F19233D00E104C3 /* KaraokeLib.h in Headers */,
+				5F0800F21F19237200E104C3 /* CDGToMp4.h in Headers */,
+				5F0800F01F19237200E104C3 /* CDGraphicsReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5F0800E01F19233D00E104C3 /* KaraokeLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0800E91F19233D00E104C3 /* Build configuration list for PBXNativeTarget "KaraokeLib" */;
+			buildPhases = (
+				5F0800DD1F19233D00E104C3 /* Sources */,
+				5F0800DE1F19233D00E104C3 /* Frameworks */,
+				5F0800DF1F19233D00E104C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaraokeLib;
+			productName = KaraokeLib;
+			productReference = 5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F480BE51EE7332800D3E7C9 /* Build configuration list for PBXNativeTarget "KaraokeToVideo" */;
@@ -109,6 +166,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = echo;
 				TargetAttributes = {
+					5F0800E01F19233D00E104C3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8ZKUDT7A65;
+						ProvisioningStyle = Automatic;
+					};
 					5F480BDD1EE7332800D3E7C9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8ZKUDT7A65;
@@ -129,24 +191,59 @@
 			projectRoot = "";
 			targets = (
 				5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */,
+				5F0800E01F19233D00E104C3 /* KaraokeLib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5F0800DD1F19233D00E104C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0800F11F19237200E104C3 /* CDGraphicsReader.m in Sources */,
+				5F0800E61F19233D00E104C3 /* KaraokeLib.m in Sources */,
+				5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F480BDA1EE7332800D3E7C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5F480BE21EE7332800D3E7C9 /* main.m in Sources */,
-				5F480BEA1EE7339200D3E7C9 /* CDGToMp4.m in Sources */,
-				5FA8D7501F00C62F0023BB97 /* CDGraphicsReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		5F0800E71F19233D00E104C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		5F0800E81F19233D00E104C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
 		5F480BE31EE7332800D3E7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,22 +336,34 @@
 		5F480BE61EE7332800D3E7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 8ZKUDT7A65;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		5F480BE71EE7332800D3E7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 8ZKUDT7A65;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5F0800E91F19233D00E104C3 /* Build configuration list for PBXNativeTarget "KaraokeLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0800E71F19233D00E104C3 /* Debug */,
+				5F0800E81F19233D00E104C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5F480BD91EE7332800D3E7C9 /* Build configuration list for PBXProject "KaraokeToVideo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
