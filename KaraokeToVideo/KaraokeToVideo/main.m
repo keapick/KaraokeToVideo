@@ -12,19 +12,21 @@
 // practice working with a binary file format, if you actually want to convert mp3+cdg to mp4 use ffmpeg!
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSDate *startTime = NSDate.date;
-        
-//        NSURL *mp4URL = [NSURL fileURLWithPath:@"Jay-Z & Alicia Keys - Empire State Of Mind.mp4"];
-//        NSURL *cdgURL = [NSURL fileURLWithPath:@"Jay-Z & Alicia Keys - Empire State Of Mind.cdg"];
-//        NSURL *mp3URL = [NSURL fileURLWithPath:@"Jay-Z & Alicia Keys - Empire State Of Mind.mp3"];
+        if (argc == 4) {
+            NSDate *startTime = NSDate.date;
+            
+            NSURL *cdgURL = [NSURL fileURLWithPath:[NSString stringWithUTF8String:argv[1]]];
+            NSURL *mp3URL = [NSURL fileURLWithPath:[NSString stringWithUTF8String:argv[2]]];
+            NSURL *mp4URL = [NSURL fileURLWithPath:[NSString stringWithUTF8String:argv[3]]];
 
-        NSURL *mp4URL = [NSURL fileURLWithPath:@"Cranberries, The - Zombie.mp4"];
-        NSURL *cdgURL = [NSURL fileURLWithPath:@"Cranberries, The - Zombie.cdg"];
-        NSURL *mp3URL = [NSURL fileURLWithPath:@"Cranberries, The - Zombie.mp3"];
-        
-        CDGToMp4 *converter = [[CDGToMp4 alloc] initWithMp3URL:mp3URL cdgURL:cdgURL mp4URL:mp4URL];
-        [converter convertToMp4];
-        NSLog(@"Duration: %f", ([startTime timeIntervalSinceNow] * -1));
+            CDGToMp4 *converter = [[CDGToMp4 alloc] initWithMp3URL:mp3URL cdgURL:cdgURL mp4URL:mp4URL];
+            [converter convertToMp4];
+            
+            NSLog(@"Duration: %f", ([startTime timeIntervalSinceNow] * -1));
+        } else {
+            NSLog(@"Usage: karaokeToVideo [input.cdg] [input.mp3] [output.mp4]");
+        }
     }
     return 0;
 }
+

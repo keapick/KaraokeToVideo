@@ -15,6 +15,10 @@
 		5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800EF1F19237200E104C3 /* CDGToMp4.m */; };
 		5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */; };
 		5F480BE21EE7332800D3E7C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE11EE7332800D3E7C9 /* main.m */; };
+		5F9CE95D1F19F78500584698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE95C1F19F78500584698 /* AppDelegate.swift */; };
+		5F9CE95F1F19F78500584698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE95E1F19F78500584698 /* ViewController.swift */; };
+		5F9CE9611F19F78500584698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9601F19F78500584698 /* Assets.xcassets */; };
+		5F9CE9641F19F78500584698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9621F19F78500584698 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +43,12 @@
 		5F0800EF1F19237200E104C3 /* CDGToMp4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGToMp4.m; sourceTree = "<group>"; };
 		5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KaraokeToVideo; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F480BE11EE7332800D3E7C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeToVideoGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9CE95C1F19F78500584698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F9CE95E1F19F78500584698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F9CE9601F19F78500584698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F9CE9631F19F78500584698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F9CE9651F19F78500584698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9CE9571F19F78500584698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +93,9 @@
 		5F480BD51EE7332800D3E7C9 = {
 			isa = PBXGroup;
 			children = (
-				5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */,
 				5FDAE9641EF7324A00F29C16 /* Resources */,
+				5F9CE95B1F19F78500584698 /* KaraokeToVideoGUI */,
+				5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */,
 				5F0800E21F19233D00E104C3 /* KaraokeLib */,
 				5F480BDF1EE7332800D3E7C9 /* Products */,
 			);
@@ -88,6 +106,7 @@
 			children = (
 				5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */,
 				5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */,
+				5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +117,18 @@
 				5F480BE11EE7332800D3E7C9 /* main.m */,
 			);
 			path = KaraokeToVideo;
+			sourceTree = "<group>";
+		};
+		5F9CE95B1F19F78500584698 /* KaraokeToVideoGUI */ = {
+			isa = PBXGroup;
+			children = (
+				5F9CE95C1F19F78500584698 /* AppDelegate.swift */,
+				5F9CE95E1F19F78500584698 /* ViewController.swift */,
+				5F9CE9601F19F78500584698 /* Assets.xcassets */,
+				5F9CE9621F19F78500584698 /* Main.storyboard */,
+				5F9CE9651F19F78500584698 /* Info.plist */,
+			);
+			path = KaraokeToVideoGUI;
 			sourceTree = "<group>";
 		};
 		5FDAE9641EF7324A00F29C16 /* Resources */ = {
@@ -157,12 +188,30 @@
 			productReference = 5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */;
 			productType = "com.apple.product-type.tool";
 		};
+		5F9CE9591F19F78500584698 /* KaraokeToVideoGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9CE9821F19F78600584698 /* Build configuration list for PBXNativeTarget "KaraokeToVideoGUI" */;
+			buildPhases = (
+				5F9CE9561F19F78500584698 /* Sources */,
+				5F9CE9571F19F78500584698 /* Frameworks */,
+				5F9CE9581F19F78500584698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaraokeToVideoGUI;
+			productName = KaraokeToVideoGUI;
+			productReference = 5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5F480BD61EE7332800D3E7C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = echo;
 				TargetAttributes = {
@@ -176,6 +225,11 @@
 						DevelopmentTeam = 8ZKUDT7A65;
 						ProvisioningStyle = Automatic;
 					};
+					5F9CE9591F19F78500584698 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8ZKUDT7A65;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 5F480BD91EE7332800D3E7C9 /* Build configuration list for PBXProject "KaraokeToVideo" */;
@@ -184,17 +238,31 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5F480BD51EE7332800D3E7C9;
 			productRefGroup = 5F480BDF1EE7332800D3E7C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				5F9CE9591F19F78500584698 /* KaraokeToVideoGUI */,
 				5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */,
 				5F0800E01F19233D00E104C3 /* KaraokeLib */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F9CE9581F19F78500584698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9CE9611F19F78500584698 /* Assets.xcassets in Resources */,
+				5F9CE9641F19F78500584698 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F0800DD1F19233D00E104C3 /* Sources */ = {
@@ -215,7 +283,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F9CE9561F19F78500584698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9CE95F1F19F78500584698 /* ViewController.swift in Sources */,
+				5F9CE95D1F19F78500584698 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F9CE9621F19F78500584698 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F9CE9631F19F78500584698 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5F0800E71F19233D00E104C3 /* Debug */ = {
@@ -353,6 +441,41 @@
 			};
 			name = Release;
 		};
+		5F9CE97C1F19F78600584698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				INFOPLIST_FILE = KaraokeToVideoGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = echo.KaraokeToVideoGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F9CE97D1F19F78600584698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				INFOPLIST_FILE = KaraokeToVideoGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = echo.KaraokeToVideoGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +486,7 @@
 				5F0800E81F19233D00E104C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F480BD91EE7332800D3E7C9 /* Build configuration list for PBXProject "KaraokeToVideo" */ = {
 			isa = XCConfigurationList;
@@ -381,6 +505,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5F9CE9821F19F78600584698 /* Build configuration list for PBXNativeTarget "KaraokeToVideoGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9CE97C1F19F78600584698 /* Debug */,
+				5F9CE97D1F19F78600584698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,24 +29,34 @@
 - (instancetype)initWithMp3URL:(NSURL *)mp3URL cdgURL:(NSURL *)cdgURL mp4URL:(NSURL *)mp4URL{
     self = [super init];
     if (self) {
+        // TODO: sanity check the URLs?
         self.mp3URL = mp3URL;
         self.cdgURL = cdgURL;
         self.mp4URL = mp4URL;
         
         // TODO: make this more reasonable, maybe move to backup version or only delete when force flag is set
-        [self cleanUpFiles];
+        [self removeTmpFile];
+        [self removeExistingMp4];
     }
     return self;
 }
 
-- (void)cleanUpFiles {
+- (void)removeExistingMp4 {
     NSError *error;
-    [[NSFileManager defaultManager] removeItemAtURL:[self tmpFile] error:&error];
     [[NSFileManager defaultManager] removeItemAtURL:self.mp4URL error:&error];
 }
 
+- (void)removeTmpFile {
+    NSError *error;
+    [[NSFileManager defaultManager] removeItemAtURL:[self tmpFile] error:&error];
+}
+
+// tmp file in the default macOS tmp folder
 - (NSURL *)tmpFile {
-    return [NSURL fileURLWithPath:@"tmp.mp4"];
+    NSString *tmpFileName = [NSString stringWithFormat:@"~%@", self.mp4URL.lastPathComponent];
+    NSURL *tmpFileURL = [[[NSFileManager defaultManager] temporaryDirectory] URLByAppendingPathComponent:tmpFileName];
+    
+    return tmpFileURL;
 }
 
 // blocking convert method
@@ -92,6 +102,7 @@
     exporter.outputFileType = AVFileTypeQuickTimeMovie;
     
     [exporter exportAsynchronouslyWithCompletionHandler:^(void) {
+        [self removeTmpFile];
         if (completion) {
             completion();
         }

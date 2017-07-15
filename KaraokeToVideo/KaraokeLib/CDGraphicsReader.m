@@ -52,6 +52,8 @@ int bitmap[CDGFrameWidth][CDGFrameHeight];
 
 // working frame
 @property (nonatomic, assign, readwrite) CVPixelBufferRef frame;
+
+// a lot of frames are exact duplicates of the previous frame
 @property (nonatomic, assign, readwrite) BOOL frameHasChanged;
 @end
 

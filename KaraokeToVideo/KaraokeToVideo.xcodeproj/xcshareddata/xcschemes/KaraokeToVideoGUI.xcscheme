@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F480BDD1EE7332800D3E7C9"
-               BuildableName = "KaraokeToVideo"
-               BlueprintName = "KaraokeToVideo"
+               BlueprintIdentifier = "5F9CE9591F19F78500584698"
+               BuildableName = "KaraokeToVideoGUI.app"
+               BlueprintName = "KaraokeToVideoGUI"
                ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,13 +28,33 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5F9CE9691F19F78500584698"
+               BuildableName = "KaraokeToVideoGUITests.xctest"
+               BlueprintName = "KaraokeToVideoGUITests"
+               ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5F9CE9741F19F78600584698"
+               BuildableName = "KaraokeToVideoGUIUITests.xctest"
+               BlueprintName = "KaraokeToVideoGUIUITests"
+               ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F480BDD1EE7332800D3E7C9"
-            BuildableName = "KaraokeToVideo"
-            BlueprintName = "KaraokeToVideo"
+            BlueprintIdentifier = "5F9CE9591F19F78500584698"
+            BuildableName = "KaraokeToVideoGUI.app"
+            BlueprintName = "KaraokeToVideoGUI"
             ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -46,8 +66,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/echo/Documents/xcode/KaraokeToMp4/Resources"
+      useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -56,26 +75,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F480BDD1EE7332800D3E7C9"
-            BuildableName = "KaraokeToVideo"
-            BlueprintName = "KaraokeToVideo"
+            BlueprintIdentifier = "5F9CE9591F19F78500584698"
+            BuildableName = "KaraokeToVideoGUI.app"
+            BlueprintName = "KaraokeToVideoGUI"
             ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "&quot;Jay-Z &amp; Alicia Keys - Empire State Of Mind.cdg&quot;"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "&quot;Jay-Z &amp; Alicia Keys - Empire State Of Mind.mp3&quot;"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "&quot;Jay-Z &amp; Alicia Keys - Empire State Of Mind.mp4&quot;"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -89,9 +94,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F480BDD1EE7332800D3E7C9"
-            BuildableName = "KaraokeToVideo"
-            BlueprintName = "KaraokeToVideo"
+            BlueprintIdentifier = "5F9CE9591F19F78500584698"
+            BuildableName = "KaraokeToVideoGUI.app"
+            BlueprintName = "KaraokeToVideoGUI"
             ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
