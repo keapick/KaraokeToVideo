@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		5F0800E41F19233D00E104C3 /* KaraokeLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800E31F19233D00E104C3 /* KaraokeLib.h */; };
 		5F0800E61F19233D00E104C3 /* KaraokeLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800E51F19233D00E104C3 /* KaraokeLib.m */; };
-		5F0800F01F19237200E104C3 /* CDGraphicsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800EC1F19237200E104C3 /* CDGraphicsReader.h */; };
-		5F0800F11F19237200E104C3 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800ED1F19237200E104C3 /* CDGraphicsReader.m */; };
 		5F0800F21F19237200E104C3 /* CDGToMp4.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800EE1F19237200E104C3 /* CDGToMp4.h */; };
 		5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800EF1F19237200E104C3 /* CDGToMp4.m */; };
 		5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */; };
+		5F0F18B51F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F18B31F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg */; };
+		5F0F18B61F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F18B41F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 */; };
 		5F480BE21EE7332800D3E7C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE11EE7332800D3E7C9 /* main.m */; };
+		5F5C72FA200D36D600D66929 /* CDGraphicsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5C72F8200D36D600D66929 /* CDGraphicsReader.h */; };
+		5F5C72FB200D36D600D66929 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */; };
 		5F9CE95D1F19F78500584698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE95C1F19F78500584698 /* AppDelegate.swift */; };
 		5F9CE95F1F19F78500584698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE95E1F19F78500584698 /* ViewController.swift */; };
 		5F9CE9611F19F78500584698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9601F19F78500584698 /* Assets.xcassets */; };
@@ -37,12 +39,14 @@
 		5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libKaraokeLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0800E31F19233D00E104C3 /* KaraokeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaraokeLib.h; sourceTree = "<group>"; };
 		5F0800E51F19233D00E104C3 /* KaraokeLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaraokeLib.m; sourceTree = "<group>"; };
-		5F0800EC1F19237200E104C3 /* CDGraphicsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphicsReader.h; sourceTree = "<group>"; };
-		5F0800ED1F19237200E104C3 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
 		5F0800EE1F19237200E104C3 /* CDGToMp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGToMp4.h; sourceTree = "<group>"; };
 		5F0800EF1F19237200E104C3 /* CDGToMp4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGToMp4.m; sourceTree = "<group>"; };
+		5F0F18B31F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jay-Z & Alicia Keys - Empire State Of Mind.cdg"; path = "../Resources/Jay-Z & Alicia Keys - Empire State Of Mind.cdg"; sourceTree = "<group>"; };
+		5F0F18B41F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Jay-Z & Alicia Keys - Empire State Of Mind.mp3"; path = "../Resources/Jay-Z & Alicia Keys - Empire State Of Mind.mp3"; sourceTree = "<group>"; };
 		5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KaraokeToVideo; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F480BE11EE7332800D3E7C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F5C72F8200D36D600D66929 /* CDGraphicsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphicsReader.h; sourceTree = "<group>"; };
+		5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
 		5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeToVideoGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9CE95C1F19F78500584698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9CE95E1F19F78500584698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,8 +88,8 @@
 				5F0800E51F19233D00E104C3 /* KaraokeLib.m */,
 				5F0800EE1F19237200E104C3 /* CDGToMp4.h */,
 				5F0800EF1F19237200E104C3 /* CDGToMp4.m */,
-				5F0800EC1F19237200E104C3 /* CDGraphicsReader.h */,
-				5F0800ED1F19237200E104C3 /* CDGraphicsReader.m */,
+				5F5C72F8200D36D600D66929 /* CDGraphicsReader.h */,
+				5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */,
 			);
 			path = KaraokeLib;
 			sourceTree = "<group>";
@@ -93,10 +97,10 @@
 		5F480BD51EE7332800D3E7C9 = {
 			isa = PBXGroup;
 			children = (
-				5FDAE9641EF7324A00F29C16 /* Resources */,
 				5F9CE95B1F19F78500584698 /* KaraokeToVideoGUI */,
 				5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */,
 				5F0800E21F19233D00E104C3 /* KaraokeLib */,
+				5FDAE9641EF7324A00F29C16 /* Resources */,
 				5F480BDF1EE7332800D3E7C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +138,8 @@
 		5FDAE9641EF7324A00F29C16 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5F0F18B31F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg */,
+				5F0F18B41F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -145,9 +151,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5C72FA200D36D600D66929 /* CDGraphicsReader.h in Headers */,
 				5F0800E41F19233D00E104C3 /* KaraokeLib.h in Headers */,
 				5F0800F21F19237200E104C3 /* CDGToMp4.h in Headers */,
-				5F0800F01F19237200E104C3 /* CDGraphicsReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +218,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = echo;
 				TargetAttributes = {
 					5F0800E01F19233D00E104C3 = {
@@ -228,6 +234,7 @@
 					5F9CE9591F19F78500584698 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8ZKUDT7A65;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9CE9611F19F78500584698 /* Assets.xcassets in Resources */,
+				5F0F18B61F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 in Resources */,
+				5F0F18B51F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg in Resources */,
 				5F9CE9641F19F78500584698 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,8 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0800F11F19237200E104C3 /* CDGraphicsReader.m in Sources */,
 				5F0800E61F19233D00E104C3 /* KaraokeLib.m in Sources */,
+				5F5C72FB200D36D600D66929 /* CDGraphicsReader.m in Sources */,
 				5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +351,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -350,7 +361,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -390,7 +405,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -398,7 +415,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,6 +439,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -455,7 +477,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -472,7 +495,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -513,6 +537,7 @@
 				5F9CE97D1F19F78600584698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

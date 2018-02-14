@@ -13,6 +13,6 @@
 - (instancetype)initWithMp3URL:(NSURL *)mp3URL cdgURL:(NSURL *)cdgURL mp4URL:(NSURL *)mp4URL;
 
 - (void)convertToMp4;
-- (void)convertToMp4WithCompletion:(void (^)())completion;
+- (void)convertToMp4WithCompletion:(void (^)(void))completion;
 
 @end

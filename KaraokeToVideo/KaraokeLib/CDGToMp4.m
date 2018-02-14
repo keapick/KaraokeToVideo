@@ -71,7 +71,7 @@
     }
 }
 
-- (void)convertToMp4WithCompletion:(void (^)())completion {
+- (void)convertToMp4WithCompletion:(void (^)(void))completion {
     
     // CDG -> MP4 with no audio
     [self convertCDGToMp4WithCompletion:^{
@@ -81,8 +81,8 @@
     }];
 }
 
-// fast conversion from MP4 + MP3 -> MP4
-- (void)addMp3ToMp4WithCompletion:(void (^)())completion {
+// fast conversion from MP4 video + MP3 -> MP4 video with audio!
+- (void)addMp3ToMp4WithCompletion:(void (^)(void))completion {
     
     AVAsset *video = [AVAsset assetWithURL:[self tmpFile]];
     AVAsset *audio = [AVAsset assetWithURL:self.mp3URL];
@@ -109,9 +109,9 @@
     }];
 }
 
-// slow conversion from CDG -> MP4
+// slow conversion from CDG -> MP4 video no audio
 // ffmpeg is also pretty slow. CDG is just a crappy video format.
-- (void)convertCDGToMp4WithCompletion:(void (^)())completion {
+- (void)convertCDGToMp4WithCompletion:(void (^)(void))completion {
     CDGraphicsReader *reader = [[CDGraphicsReader alloc] initWithCDG:self.cdgURL];
     
     [self setupVideo];
@@ -159,7 +159,7 @@
 }
 
 // close video
-- (void)closeVideoWithCompletion:(void (^)())completion {
+- (void)closeVideoWithCompletion:(void (^)(void))completion {
     [self.videoAdaptor.assetWriterInput markAsFinished];
     [self.videoWriter finishWritingWithCompletionHandler:^{
         if (completion) {
