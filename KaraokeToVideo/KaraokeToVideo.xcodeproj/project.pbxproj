@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F0800E41F19233D00E104C3 /* KaraokeLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800E31F19233D00E104C3 /* KaraokeLib.h */; };
-		5F0800E61F19233D00E104C3 /* KaraokeLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800E51F19233D00E104C3 /* KaraokeLib.m */; };
-		5F0800F21F19237200E104C3 /* CDGToMp4.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0800EE1F19237200E104C3 /* CDGToMp4.h */; };
-		5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800EF1F19237200E104C3 /* CDGToMp4.m */; };
-		5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */; };
-		5F0F18B51F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F18B31F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg */; };
-		5F0F18B61F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F0F18B41F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 */; };
-		5F480BE21EE7332800D3E7C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE11EE7332800D3E7C9 /* main.m */; };
-		5F5C72FA200D36D600D66929 /* CDGraphicsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5C72F8200D36D600D66929 /* CDGraphicsReader.h */; };
-		5F5C72FB200D36D600D66929 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */; };
-		5F9CE95D1F19F78500584698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE95C1F19F78500584698 /* AppDelegate.swift */; };
-		5F9CE95F1F19F78500584698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE95E1F19F78500584698 /* ViewController.swift */; };
-		5F9CE9611F19F78500584698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9601F19F78500584698 /* Assets.xcassets */; };
-		5F9CE9641F19F78500584698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9621F19F78500584698 /* Main.storyboard */; };
+		A19A5C16207088CF00282829 /* KaraokeDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = A19A5C15207088CF00282829 /* KaraokeDropView.m */; };
+		A19A5C362071522700282829 /* KaraokeLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A19A5C352071522700282829 /* KaraokeLib.h */; };
+		A19A5C382071522700282829 /* KaraokeLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A19A5C372071522700282829 /* KaraokeLib.m */; };
+		A19A5C3C2071523800282829 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800EF1F19237200E104C3 /* CDGToMp4.m */; };
+		A19A5C3D2071523B00282829 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */; };
+		A19A5C412071525800282829 /* libKaraokeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A19A5C332071522700282829 /* libKaraokeLib.a */; };
+		A19A5C422071526100282829 /* libKaraokeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A19A5C332071522700282829 /* libKaraokeLib.a */; };
+		A1FE252F20354A78001FB264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FE252E20354A78001FB264 /* AppDelegate.m */; };
+		A1FE253220354A78001FB264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FE253120354A78001FB264 /* ViewController.m */; };
+		A1FE253420354A78001FB264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FE253320354A78001FB264 /* Assets.xcassets */; };
+		A1FE253720354A78001FB264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FE253520354A78001FB264 /* Main.storyboard */; };
+		A1FE253A20354A78001FB264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FE253920354A78001FB264 /* main.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A19A5C3F2071525300282829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F480BD61EE7332800D3E7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19A5C322071522700282829;
+			remoteInfo = KaraokeLib;
+		};
+		A19A5C432071526600282829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F480BD61EE7332800D3E7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19A5C322071522700282829;
+			remoteInfo = KaraokeLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5F480BDC1EE7332800D3E7C9 /* CopyFiles */ = {
@@ -33,10 +48,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A1F26DCE206B71650042D568 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libKaraokeLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0800E31F19233D00E104C3 /* KaraokeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaraokeLib.h; sourceTree = "<group>"; };
 		5F0800E51F19233D00E104C3 /* KaraokeLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaraokeLib.m; sourceTree = "<group>"; };
 		5F0800EE1F19237200E104C3 /* CDGToMp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGToMp4.h; sourceTree = "<group>"; };
@@ -47,34 +70,46 @@
 		5F480BE11EE7332800D3E7C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F5C72F8200D36D600D66929 /* CDGraphicsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphicsReader.h; sourceTree = "<group>"; };
 		5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
-		5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeToVideoGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F9CE95C1F19F78500584698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F9CE95E1F19F78500584698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F9CE9601F19F78500584698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F9CE9631F19F78500584698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F9CE9651F19F78500584698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19A5C14207088CF00282829 /* KaraokeDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeDropView.h; sourceTree = "<group>"; };
+		A19A5C15207088CF00282829 /* KaraokeDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeDropView.m; sourceTree = "<group>"; };
+		A19A5C1E207151F300282829 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		A19A5C20207151F300282829 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		A19A5C332071522700282829 /* libKaraokeLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKaraokeLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19A5C352071522700282829 /* KaraokeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaraokeLib.h; sourceTree = "<group>"; };
+		A19A5C372071522700282829 /* KaraokeLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaraokeLib.m; sourceTree = "<group>"; };
+		A1FE252B20354A78001FB264 /* KaraokeToVideoGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeToVideoGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FE252D20354A78001FB264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1FE252E20354A78001FB264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1FE253020354A78001FB264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1FE253120354A78001FB264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1FE253320354A78001FB264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1FE253620354A78001FB264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1FE253820354A78001FB264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FE253920354A78001FB264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1FE253B20354A78001FB264 /* KaraokeToVideoGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KaraokeToVideoGUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F0800DE1F19233D00E104C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5F480BDB1EE7332800D3E7C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0800F41F1923AC00E104C3 /* libKaraokeLib.dylib in Frameworks */,
+				A19A5C412071525800282829 /* libKaraokeLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F9CE9571F19F78500584698 /* Frameworks */ = {
+		A19A5C302071522700282829 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FE252820354A78001FB264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19A5C422071526100282829 /* libKaraokeLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +132,14 @@
 		5F480BD51EE7332800D3E7C9 = {
 			isa = PBXGroup;
 			children = (
-				5F9CE95B1F19F78500584698 /* KaraokeToVideoGUI */,
+				A1FE252C20354A78001FB264 /* KaraokeToVideoGUI */,
 				5F480BE01EE7332800D3E7C9 /* KaraokeToVideo */,
 				5F0800E21F19233D00E104C3 /* KaraokeLib */,
 				5FDAE9641EF7324A00F29C16 /* Resources */,
+				A19A5C1D207151F300282829 /* Test */,
+				A19A5C342071522700282829 /* KaraokeLib */,
 				5F480BDF1EE7332800D3E7C9 /* Products */,
+				A1F26DCC206B6F620042D568 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */,
-				5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */,
-				5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */,
+				A1FE252B20354A78001FB264 /* KaraokeToVideoGUI.app */,
+				A19A5C332071522700282829 /* libKaraokeLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,18 +161,6 @@
 			path = KaraokeToVideo;
 			sourceTree = "<group>";
 		};
-		5F9CE95B1F19F78500584698 /* KaraokeToVideoGUI */ = {
-			isa = PBXGroup;
-			children = (
-				5F9CE95C1F19F78500584698 /* AppDelegate.swift */,
-				5F9CE95E1F19F78500584698 /* ViewController.swift */,
-				5F9CE9601F19F78500584698 /* Assets.xcassets */,
-				5F9CE9621F19F78500584698 /* Main.storyboard */,
-				5F9CE9651F19F78500584698 /* Info.plist */,
-			);
-			path = KaraokeToVideoGUI;
-			sourceTree = "<group>";
-		};
 		5FDAE9641EF7324A00F29C16 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,39 +170,63 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		A19A5C1D207151F300282829 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A19A5C1E207151F300282829 /* Test.h */,
+				A19A5C20207151F300282829 /* Test.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A19A5C342071522700282829 /* KaraokeLib */ = {
+			isa = PBXGroup;
+			children = (
+				A19A5C352071522700282829 /* KaraokeLib.h */,
+				A19A5C372071522700282829 /* KaraokeLib.m */,
+			);
+			path = KaraokeLib;
+			sourceTree = "<group>";
+		};
+		A1F26DCC206B6F620042D568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1FE252C20354A78001FB264 /* KaraokeToVideoGUI */ = {
+			isa = PBXGroup;
+			children = (
+				A1FE252D20354A78001FB264 /* AppDelegate.h */,
+				A1FE252E20354A78001FB264 /* AppDelegate.m */,
+				A1FE253020354A78001FB264 /* ViewController.h */,
+				A1FE253120354A78001FB264 /* ViewController.m */,
+				A19A5C14207088CF00282829 /* KaraokeDropView.h */,
+				A19A5C15207088CF00282829 /* KaraokeDropView.m */,
+				A1FE253320354A78001FB264 /* Assets.xcassets */,
+				A1FE253520354A78001FB264 /* Main.storyboard */,
+				A1FE253820354A78001FB264 /* Info.plist */,
+				A1FE253920354A78001FB264 /* main.m */,
+				A1FE253B20354A78001FB264 /* KaraokeToVideoGUI.entitlements */,
+			);
+			path = KaraokeToVideoGUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5F0800DF1F19233D00E104C3 /* Headers */ = {
+		A19A5C312071522700282829 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F5C72FA200D36D600D66929 /* CDGraphicsReader.h in Headers */,
-				5F0800E41F19233D00E104C3 /* KaraokeLib.h in Headers */,
-				5F0800F21F19237200E104C3 /* CDGToMp4.h in Headers */,
+				A19A5C362071522700282829 /* KaraokeLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5F0800E01F19233D00E104C3 /* KaraokeLib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F0800E91F19233D00E104C3 /* Build configuration list for PBXNativeTarget "KaraokeLib" */;
-			buildPhases = (
-				5F0800DD1F19233D00E104C3 /* Sources */,
-				5F0800DE1F19233D00E104C3 /* Frameworks */,
-				5F0800DF1F19233D00E104C3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KaraokeLib;
-			productName = KaraokeLib;
-			productReference = 5F0800E11F19233D00E104C3 /* libKaraokeLib.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
 		5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F480BE51EE7332800D3E7C9 /* Build configuration list for PBXNativeTarget "KaraokeToVideo" */;
@@ -188,27 +238,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				A19A5C402071525300282829 /* PBXTargetDependency */,
 			);
 			name = KaraokeToVideo;
 			productName = KaraokeToVideo;
 			productReference = 5F480BDE1EE7332800D3E7C9 /* KaraokeToVideo */;
 			productType = "com.apple.product-type.tool";
 		};
-		5F9CE9591F19F78500584698 /* KaraokeToVideoGUI */ = {
+		A19A5C322071522700282829 /* KaraokeLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F9CE9821F19F78600584698 /* Build configuration list for PBXNativeTarget "KaraokeToVideoGUI" */;
+			buildConfigurationList = A19A5C392071522700282829 /* Build configuration list for PBXNativeTarget "KaraokeLib" */;
 			buildPhases = (
-				5F9CE9561F19F78500584698 /* Sources */,
-				5F9CE9571F19F78500584698 /* Frameworks */,
-				5F9CE9581F19F78500584698 /* Resources */,
+				A19A5C2F2071522700282829 /* Sources */,
+				A19A5C302071522700282829 /* Frameworks */,
+				A19A5C312071522700282829 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = KaraokeLib;
+			productName = KaraokeLib;
+			productReference = A19A5C332071522700282829 /* libKaraokeLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A1FE252A20354A78001FB264 /* KaraokeToVideoGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FE255220354A78001FB264 /* Build configuration list for PBXNativeTarget "KaraokeToVideoGUI" */;
+			buildPhases = (
+				A1FE252720354A78001FB264 /* Sources */,
+				A1FE252820354A78001FB264 /* Frameworks */,
+				A1FE252920354A78001FB264 /* Resources */,
+				A1F26DCE206B71650042D568 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19A5C442071526600282829 /* PBXTargetDependency */,
+			);
 			name = KaraokeToVideoGUI;
 			productName = KaraokeToVideoGUI;
-			productReference = 5F9CE95A1F19F78500584698 /* KaraokeToVideoGUI.app */;
+			productReference = A1FE252B20354A78001FB264 /* KaraokeToVideoGUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -218,24 +288,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = echo;
 				TargetAttributes = {
-					5F0800E01F19233D00E104C3 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8ZKUDT7A65;
-						ProvisioningStyle = Automatic;
-					};
 					5F480BDD1EE7332800D3E7C9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8ZKUDT7A65;
 						ProvisioningStyle = Automatic;
 					};
-					5F9CE9591F19F78500584698 = {
-						CreatedOnToolsVersion = 8.3.3;
+					A19A5C322071522700282829 = {
+						CreatedOnToolsVersion = 9.3;
 						DevelopmentTeam = 8ZKUDT7A65;
-						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+					};
+					A1FE252A20354A78001FB264 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 8ZKUDT7A65;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -252,62 +326,74 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F9CE9591F19F78500584698 /* KaraokeToVideoGUI */,
+				A1FE252A20354A78001FB264 /* KaraokeToVideoGUI */,
 				5F480BDD1EE7332800D3E7C9 /* KaraokeToVideo */,
-				5F0800E01F19233D00E104C3 /* KaraokeLib */,
+				A19A5C322071522700282829 /* KaraokeLib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5F9CE9581F19F78500584698 /* Resources */ = {
+		A1FE252920354A78001FB264 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9CE9611F19F78500584698 /* Assets.xcassets in Resources */,
-				5F0F18B61F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.mp3 in Resources */,
-				5F0F18B51F4115CA0076AFCC /* Jay-Z & Alicia Keys - Empire State Of Mind.cdg in Resources */,
-				5F9CE9641F19F78500584698 /* Main.storyboard in Resources */,
+				A1FE253420354A78001FB264 /* Assets.xcassets in Resources */,
+				A1FE253720354A78001FB264 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5F0800DD1F19233D00E104C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F0800E61F19233D00E104C3 /* KaraokeLib.m in Sources */,
-				5F5C72FB200D36D600D66929 /* CDGraphicsReader.m in Sources */,
-				5F0800F31F19237200E104C3 /* CDGToMp4.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5F480BDA1EE7332800D3E7C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F480BE21EE7332800D3E7C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F9CE9561F19F78500584698 /* Sources */ = {
+		A19A5C2F2071522700282829 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9CE95F1F19F78500584698 /* ViewController.swift in Sources */,
-				5F9CE95D1F19F78500584698 /* AppDelegate.swift in Sources */,
+				A19A5C382071522700282829 /* KaraokeLib.m in Sources */,
+				A19A5C3D2071523B00282829 /* CDGraphicsReader.m in Sources */,
+				A19A5C3C2071523800282829 /* CDGToMp4.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FE252720354A78001FB264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FE253220354A78001FB264 /* ViewController.m in Sources */,
+				A1FE253A20354A78001FB264 /* main.m in Sources */,
+				A19A5C16207088CF00282829 /* KaraokeDropView.m in Sources */,
+				A1FE252F20354A78001FB264 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A19A5C402071525300282829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19A5C322071522700282829 /* KaraokeLib */;
+			targetProxy = A19A5C3F2071525300282829 /* PBXContainerItemProxy */;
+		};
+		A19A5C442071526600282829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19A5C322071522700282829 /* KaraokeLib */;
+			targetProxy = A19A5C432071526600282829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		5F9CE9621F19F78500584698 /* Main.storyboard */ = {
+		A1FE253520354A78001FB264 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5F9CE9631F19F78500584698 /* Base */,
+				A1FE253620354A78001FB264 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,32 +401,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5F0800E71F19233D00E104C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = 8ZKUDT7A65;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Debug;
-		};
-		5F0800E81F19233D00E104C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				DEVELOPMENT_TEAM = 8ZKUDT7A65;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Release;
-		};
 		5F480BE31EE7332800D3E7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,6 +415,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -362,6 +423,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -409,6 +471,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -416,6 +479,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -448,6 +512,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -458,60 +523,87 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
-		5F9CE97C1F19F78600584698 /* Debug */ = {
+		A19A5C3A2071522700282829 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZKUDT7A65;
-				INFOPLIST_FILE = KaraokeToVideoGUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = echo.KaraokeToVideoGUI;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		5F9CE97D1F19F78600584698 /* Release */ = {
+		A19A5C3B2071522700282829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1FE255320354A78001FB264 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = KaraokeToVideoGUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = echo.KaraokeToVideoGUI;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echo.KaraokeToVideoGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A1FE255420354A78001FB264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8ZKUDT7A65;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = KaraokeToVideoGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.echo.KaraokeToVideoGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F0800E91F19233D00E104C3 /* Build configuration list for PBXNativeTarget "KaraokeLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F0800E71F19233D00E104C3 /* Debug */,
-				5F0800E81F19233D00E104C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5F480BD91EE7332800D3E7C9 /* Build configuration list for PBXProject "KaraokeToVideo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -530,11 +622,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F9CE9821F19F78600584698 /* Build configuration list for PBXNativeTarget "KaraokeToVideoGUI" */ = {
+		A19A5C392071522700282829 /* Build configuration list for PBXNativeTarget "KaraokeLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F9CE97C1F19F78600584698 /* Debug */,
-				5F9CE97D1F19F78600584698 /* Release */,
+				A19A5C3A2071522700282829 /* Debug */,
+				A19A5C3B2071522700282829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1FE255220354A78001FB264 /* Build configuration list for PBXNativeTarget "KaraokeToVideoGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FE255320354A78001FB264 /* Debug */,
+				A1FE255420354A78001FB264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

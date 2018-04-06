@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F0800E01F19233D00E104C3"
-               BuildableName = "libKaraokeLib.dylib"
+               BlueprintIdentifier = "A19A5C322071522700282829"
+               BuildableName = "libKaraokeLib.a"
                BlueprintName = "KaraokeLib"
                ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F0800E01F19233D00E104C3"
-            BuildableName = "libKaraokeLib.dylib"
+            BlueprintIdentifier = "A19A5C322071522700282829"
+            BuildableName = "libKaraokeLib.a"
             BlueprintName = "KaraokeLib"
             ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
          </BuildableReference>
@@ -65,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F0800E01F19233D00E104C3"
-            BuildableName = "libKaraokeLib.dylib"
+            BlueprintIdentifier = "A19A5C322071522700282829"
+            BuildableName = "libKaraokeLib.a"
             BlueprintName = "KaraokeLib"
             ReferencedContainer = "container:KaraokeToVideo.xcodeproj">
          </BuildableReference>

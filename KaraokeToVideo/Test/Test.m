@@ -1,13 +1,13 @@
 //
-//  KaraokeLib.h
-//  KaraokeLib
+//  Test.m
+//  Test
 //
 //  Created by Ernest Cho on 4/1/18.
 //  Copyright © 2018 echo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Test.h"
 
-@interface KaraokeLib : NSObject
+@implementation Test
 
 @end

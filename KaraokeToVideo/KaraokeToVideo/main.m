@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
             NSURL *mp3URL = [NSURL fileURLWithPath:[NSString stringWithUTF8String:argv[2]]];
             NSURL *mp4URL = [NSURL fileURLWithPath:[NSString stringWithUTF8String:argv[3]]];
 
-            CDGToMp4 *converter = [[CDGToMp4 alloc] initWithMp3URL:mp3URL cdgURL:cdgURL mp4URL:mp4URL];
+            CDGToMp4 *converter = [[CDGToMp4 alloc] initWithMp3URL:mp3URL cdgURL:cdgURL mp4URL:mp4URL overwrite:YES];
             [converter convertToMp4];
             
             NSLog(@"Duration: %f", ([startTime timeIntervalSinceNow] * -1));

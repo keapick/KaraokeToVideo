@@ -2,8 +2,8 @@
 //  KaraokeLib.m
 //  KaraokeLib
 //
-//  Created by echo on 7/14/17.
-//  Copyright © 2017 echo. All rights reserved.
+//  Created by Ernest Cho on 4/1/18.
+//  Copyright © 2018 echo. All rights reserved.
 //
 
 #import "KaraokeLib.h"

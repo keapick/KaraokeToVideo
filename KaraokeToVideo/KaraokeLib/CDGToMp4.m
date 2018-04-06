@@ -26,7 +26,7 @@
 
 @implementation CDGToMp4
 
-- (instancetype)initWithMp3URL:(NSURL *)mp3URL cdgURL:(NSURL *)cdgURL mp4URL:(NSURL *)mp4URL{
+- (instancetype)initWithMp3URL:(NSURL *)mp3URL cdgURL:(NSURL *)cdgURL mp4URL:(NSURL *)mp4URL overwrite:(BOOL)overwrite {
     self = [super init];
     if (self) {
         // TODO: sanity check the URLs?
@@ -34,9 +34,11 @@
         self.cdgURL = cdgURL;
         self.mp4URL = mp4URL;
         
-        // TODO: make this more reasonable, maybe move to backup version or only delete when force flag is set
+        // remove any existing files
         [self removeTmpFile];
-        [self removeExistingMp4];
+        if (overwrite) {
+            [self removeExistingMp4];
+        }
     }
     return self;
 }
@@ -73,12 +75,16 @@
 
 - (void)convertToMp4WithCompletion:(void (^)(void))completion {
     
-    // CDG -> MP4 with no audio
-    [self convertCDGToMp4WithCompletion:^{
-        
-        // MP4 + MP3 -> MP4 with audio
-        [self addMp3ToMp4WithCompletion:completion];
-    }];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:self.mp4URL.path]) {
+        // CDG -> MP4 with no audio
+        [self convertCDGToMp4WithCompletion:^{
+            
+            // MP4 + MP3 -> MP4 with audio
+            [self addMp3ToMp4WithCompletion:completion];
+        }];
+    } else {
+        NSLog(@"MP4 exists! %@", self.mp4URL);
+    }
 }
 
 // fast conversion from MP4 video + MP3 -> MP4 video with audio!
@@ -143,7 +149,7 @@
     self.videoWriter = [[AVAssetWriter alloc] initWithURL:tmpFile fileType:AVFileTypeMPEG4 error:nil];
     
     NSDictionary *videoSettings = [NSDictionary dictionaryWithObjectsAndKeys:
-                                   AVVideoCodecH264, AVVideoCodecKey,
+                                   AVVideoCodecTypeH264, AVVideoCodecKey,
                                    [NSNumber numberWithInt:CDGFrameWidth], AVVideoWidthKey,
                                    [NSNumber numberWithInt:CDGFrameHeight], AVVideoHeightKey,
                                    nil];

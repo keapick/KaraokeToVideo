@@ -40,14 +40,15 @@ static int const dataStart = 4;
 // start of the color bitmap
 static int const colorStart = 8;
 
-// C file handle.  I cannot figure out how to get NSFileHandle to stop mangling binary files.
-FILE *file;
-char buffer[CDGDataPacketSize];
+@interface CDGraphicsReader() {
+    // C file handle.  I cannot figure out how to get NSFileHandle to stop mangling binary files.
+    FILE *file;
+    char buffer[CDGDataPacketSize];
+    
+    // bitmap containing color index values
+    int bitmap[CDGFrameWidth][CDGFrameHeight];
+}
 
-// bitmap containing color index values
-int bitmap[CDGFrameWidth][CDGFrameHeight];
-
-@interface CDGraphicsReader()
 @property (nonatomic, strong, readwrite) NSMutableArray *colors;
 
 // working frame
