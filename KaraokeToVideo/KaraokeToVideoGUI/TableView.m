@@ -1,15 +1,15 @@
 //
-//  KaraokeDropView.m
+//  TableView.m
 //  KaraokeToVideoGUI
 //
-//  Created by Ernest Cho on 3/7/18.
+//  Created by Ernest Cho on 11/23/18.
 //  Copyright © 2018 echo. All rights reserved.
 //
 
-#import "KaraokeDropView.h"
+#import "TableView.h"
 #import "CDGToMp4.h"
 
-@interface KaraokeDropView()
+@interface TableView()
 
 @property (nonatomic, strong, readwrite) dispatch_queue_t serialQueue;
 
@@ -18,32 +18,24 @@
 
 @end
 
-@implementation KaraokeDropView
+@implementation TableView
 
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         self.serialQueue = dispatch_queue_create("com.echo.KaraokeToVideo", DISPATCH_QUEUE_SERIAL);
-
-        [self registerForDraggedTypes:@[NSFilenamesPboardType]];
-        
         self.mp3s = [NSMutableDictionary new];
         self.cdgs = [NSMutableDictionary new];
+        
+        [self registerForDraggedTypes:@[NSFilenamesPboardType]];
     }
     return self;
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
+    
     // Drawing code here.
-}
-
-// prevent beachball?
-- (void)mouseDown:(NSEvent *)theEvent {
-    NSInteger clickCount = [theEvent clickCount];
-    if (clickCount > 1) {
-        NSLog(@"Click!");
-    }
 }
 
 - (NSDragOperation)draggingEntered:(id<NSDraggingInfo>)sender {
@@ -108,5 +100,6 @@
         }
     }
 }
+
 
 @end

@@ -8,14 +8,17 @@
 
 #import "CDGraphicsReader.h"
 
+static int const CDGFrameWidth = 300;
+static int const CDGFrameHeight = 216;
+static int const CDGFramesPerSecond = 15;
+static int const CDGPacketsPerSecond = 300;
+
 // cdg data packets are 24 bytes
 static int const CDGDataPacketSize = 24;
 
-// data stream rate
-static int const CDGPacketsPerSecond = 300;
-
-// command byte marks the start of a command
 static int const CDGMask = '\x3F';
+
+// command byte precedes an instruction
 static int const CDGCommandByte = '\x09';
 
 // instructions
@@ -26,19 +29,16 @@ static int const CDGColorsHigh = 31;
 static int const CDGTileBlock = 6;
 static int const CDGTileBlockXOR = 38;
 
-// number of colors
 static int const CDGColorCount = 16;
-
-// color masks
-static const char maskArray[] = {
+static const char CDGColorMaskArray[] = {
     0x20, 0x10, 0x08, 0x04, 0x02, 0x01
 };
 
 // start of data skipping the command, instruction and parity bytes
-static int const dataStart = 4;
+static int const CDGDataStart = 4;
 
 // start of the color bitmap
-static int const colorStart = 8;
+static int const CDGColorStart = 8;
 
 @interface CDGraphicsReader() {
     // C file handle.  I cannot figure out how to get NSFileHandle to stop mangling binary files.
@@ -59,6 +59,18 @@ static int const colorStart = 8;
 @end
 
 @implementation CDGraphicsReader
+
++ (int)frameRate {
+    return CDGFramesPerSecond;
+}
+
++ (int)frameWidth {
+    return CDGFrameWidth;
+}
+
++ (int)frameHeight {
+    return CDGFrameHeight;
+}
 
 - (instancetype)initWithCDG:(NSURL *)cdg {
     self = [super init];
@@ -192,8 +204,8 @@ static int const colorStart = 8;
         int red = 0, green = 0, blue = 0;
         
         // grab two bytes at a time
-        int lowbyte = buffer[dataStart+i];
-        int highbyte = buffer[dataStart+i+1];
+        int lowbyte = buffer[CDGDataStart+i];
+        int highbyte = buffer[CDGDataStart+i+1];
         
         // 4 bits for red
         if ((lowbyte & 0x20) > 0) {
@@ -260,7 +272,6 @@ static int const colorStart = 8;
     return [NSColor colorWithRed:1.0f green:1.0f blue:0.0f alpha:1.0f];
 }
 
-// paint a tile on the frame
 - (void)paintFrame:(int)colorIndex rowStart:(int)rowStart rowEnd:(int)rowEnd colStart:(int)colStart colEnd:(int)colEnd {
     for (int i = rowStart; i < rowEnd; i++) {
         for (int j = colStart; j < colEnd; j++) {
@@ -274,13 +285,13 @@ static int const colorStart = 8;
 
 // paints background color
 - (void)writeMemoryPreset {
-    int colorIndex = buffer[dataStart] & 0x0F;
+    int colorIndex = buffer[CDGDataStart] & 0x0F;
     [self paintFrame:colorIndex rowStart:0 rowEnd:CDGFrameHeight colStart:0 colEnd:CDGFrameWidth];
 }
 
 // paints a border
 - (void)writeBorderPreset {
-    int colorIndex = buffer[dataStart] & 0x0F;
+    int colorIndex = buffer[CDGDataStart] & 0x0F;
     
     // top
     [self paintFrame:colorIndex rowStart:0 rowEnd:12 colStart:0 colEnd:CDGFrameWidth];
@@ -299,18 +310,18 @@ static int const colorStart = 8;
 - (void)writeTileBlockIsXOR:(BOOL)isXOR {
     
     // reference colors
-    int colorIndexA = buffer[dataStart] & 0x0F;
-    int colorIndexB = buffer[dataStart+1] & 0x0F;
+    int colorIndexA = buffer[CDGDataStart] & 0x0F;
+    int colorIndexB = buffer[CDGDataStart+1] & 0x0F;
     
     // tile position
-    int top = (buffer[dataStart + 2] & 0x1F) * 12;
-    int left = (buffer[dataStart + 3] & 0x3F) * 6;
+    int top = (buffer[CDGDataStart + 2] & 0x1F) * 12;
+    int left = (buffer[CDGDataStart + 3] & 0x3F) * 6;
 
     for (int i=0; i<12; i++) {
         for (int j=0; j<6; j++) {
             
             // find out which color goes in this pixel
-            int colorIndex = (buffer[colorStart + i] & maskArray[j]) ? colorIndexB : colorIndexA;
+            int colorIndex = (buffer[CDGColorStart + i] & CDGColorMaskArray[j]) ? colorIndexB : colorIndexA;
             if (isXOR) {
                 if (bitmap[left+j][top+i] != (bitmap[left+j][top+i] ^ colorIndex)) {
                     self.frameHasChanged = YES;

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CDGToMp4.h"
 
 @interface KaraokeLib : NSObject
 

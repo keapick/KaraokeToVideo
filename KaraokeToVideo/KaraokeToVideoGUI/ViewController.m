@@ -12,8 +12,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
 }
 
 - (void)viewDidAppear {
@@ -21,7 +19,6 @@
     
     [self.view.window setTitle:@"MP3+CDG -> MP4"];
 }
-
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];

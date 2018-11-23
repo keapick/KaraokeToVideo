@@ -34,7 +34,6 @@
         self.cdgURL = cdgURL;
         self.mp4URL = mp4URL;
         
-        // remove any existing files
         [self removeTmpFile];
         if (overwrite) {
             [self removeExistingMp4];
@@ -53,7 +52,6 @@
     [[NSFileManager defaultManager] removeItemAtURL:[self tmpFile] error:&error];
 }
 
-// tmp file in the default macOS tmp folder
 - (NSURL *)tmpFile {
     NSString *tmpFileName = [NSString stringWithFormat:@"~%@", self.mp4URL.lastPathComponent];
     NSURL *tmpFileURL = [[[NSFileManager defaultManager] temporaryDirectory] URLByAppendingPathComponent:tmpFileName];
@@ -61,7 +59,6 @@
     return tmpFileURL;
 }
 
-// blocking convert method
 - (void)convertToMp4 {
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     [self convertToMp4WithCompletion:^{
@@ -76,10 +73,7 @@
 - (void)convertToMp4WithCompletion:(void (^)(void))completion {
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:self.mp4URL.path]) {
-        // CDG -> MP4 with no audio
         [self convertCDGToMp4WithCompletion:^{
-            
-            // MP4 + MP3 -> MP4 with audio
             [self addMp3ToMp4WithCompletion:completion];
         }];
     } else {
@@ -122,8 +116,8 @@
     
     [self setupVideo];
     
-    CMTime frameRate = CMTimeMake(1, 15);
-    __block CMTime next = frameRate;
+    CMTime frameInterval = CMTimeMake(1, [CDGraphicsReader frameRate]);
+    __block CMTime next = frameInterval;
     
     // pull style buffer, it asks for data as it's ready
     // https://developer.apple.com/documentation/avfoundation/avassetwriterinput/1387508-requestmediadatawhenreadyonqueue
@@ -133,7 +127,7 @@
             if (buffer) {
                 [self.videoAdaptor appendPixelBuffer:buffer withPresentationTime:next];
                 CVBufferRelease(buffer);
-                next = CMTimeAdd(next, frameRate);
+                next = CMTimeAdd(next, frameInterval);
             } else {
                 [reader close];
                 [self closeVideoWithCompletion:completion];
@@ -143,15 +137,14 @@
     }];
 }
 
-// setup video
 - (void)setupVideo {
     NSURL *tmpFile = [self tmpFile];
     self.videoWriter = [[AVAssetWriter alloc] initWithURL:tmpFile fileType:AVFileTypeMPEG4 error:nil];
     
     NSDictionary *videoSettings = [NSDictionary dictionaryWithObjectsAndKeys:
                                    AVVideoCodecTypeH264, AVVideoCodecKey,
-                                   [NSNumber numberWithInt:CDGFrameWidth], AVVideoWidthKey,
-                                   [NSNumber numberWithInt:CDGFrameHeight], AVVideoHeightKey,
+                                   [NSNumber numberWithInt:[CDGraphicsReader frameWidth]], AVVideoWidthKey,
+                                   [NSNumber numberWithInt:[CDGraphicsReader frameHeight]], AVVideoHeightKey,
                                    nil];
     AVAssetWriterInput* videoWriterInput = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo outputSettings:videoSettings];
     
@@ -164,7 +157,6 @@
     [self.videoWriter startSessionAtSourceTime:kCMTimeZero];
 }
 
-// close video
 - (void)closeVideoWithCompletion:(void (^)(void))completion {
     [self.videoAdaptor.assetWriterInput markAsFinished];
     [self.videoWriter finishWritingWithCompletionHandler:^{
