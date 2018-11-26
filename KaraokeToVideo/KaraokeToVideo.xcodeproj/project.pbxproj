@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A11E3CDD20E29C5700A90A96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F480BE11EE7332800D3E7C9 /* main.m */; };
 		A16C8D8E21A8B7F0004B9D04 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16C8D8D21A8B7F0004B9D04 /* TableView.m */; };
+		A16C8D9121A9306E004B9D04 /* FileConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = A16C8D9021A9306E004B9D04 /* FileConversion.m */; };
 		A19A5C3C2071523800282829 /* CDGToMp4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0800EF1F19237200E104C3 /* CDGToMp4.m */; };
 		A19A5C3D2071523B00282829 /* CDGraphicsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */; };
 		A19A5C412071525800282829 /* libKaraokeLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A19A5C332071522700282829 /* libKaraokeLib.a */; };
@@ -71,6 +72,8 @@
 		5F5C72F9200D36D600D66929 /* CDGraphicsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphicsReader.m; sourceTree = "<group>"; };
 		A16C8D8C21A8B7F0004B9D04 /* TableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
 		A16C8D8D21A8B7F0004B9D04 /* TableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		A16C8D8F21A9306E004B9D04 /* FileConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileConversion.h; sourceTree = "<group>"; };
+		A16C8D9021A9306E004B9D04 /* FileConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileConversion.m; sourceTree = "<group>"; };
 		A19A5C332071522700282829 /* libKaraokeLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKaraokeLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FE252B20354A78001FB264 /* KaraokeToVideoGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeToVideoGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FE252D20354A78001FB264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				A1FE253120354A78001FB264 /* ViewController.m */,
 				A16C8D8C21A8B7F0004B9D04 /* TableView.h */,
 				A16C8D8D21A8B7F0004B9D04 /* TableView.m */,
+				A16C8D8F21A9306E004B9D04 /* FileConversion.h */,
+				A16C8D9021A9306E004B9D04 /* FileConversion.m */,
 				A1FE253320354A78001FB264 /* Assets.xcassets */,
 				A1FE253520354A78001FB264 /* Main.storyboard */,
 				A1FE253820354A78001FB264 /* Info.plist */,
@@ -342,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FE253220354A78001FB264 /* ViewController.m in Sources */,
+				A16C8D9121A9306E004B9D04 /* FileConversion.m in Sources */,
 				A16C8D8E21A8B7F0004B9D04 /* TableView.m in Sources */,
 				A1FE253A20354A78001FB264 /* main.m in Sources */,
 				A1FE252F20354A78001FB264 /* AppDelegate.m in Sources */,

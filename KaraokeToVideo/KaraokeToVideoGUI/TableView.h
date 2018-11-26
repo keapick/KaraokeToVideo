@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableView : NSTableView
 
+@property (nonatomic, copy, readwrite) void (^completion)(NSArray *);
+
 @end
 
 NS_ASSUME_NONNULL_END
