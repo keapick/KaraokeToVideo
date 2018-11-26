@@ -1,4 +1,4 @@
-# KaraokeToMp4, converts mp3+cdg to mp4
+# KaraokeToVideo, converts mp3+cdg to mp4
 
 Project to learn a bit about Apple's media APIs.  
 
